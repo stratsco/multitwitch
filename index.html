@@ -1,0 +1,73 @@
+---
+---
+
+<html>
+  <head>
+    <title>Team Strats Watch Party</title>
+    <meta http-equiv="refresh" content="3600">
+    <style type="text/css">
+      html, body {
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+      }
+      .grid {
+        display:table;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      .grid > iframe {
+        display:table-cell;
+        width: 25%;
+        height: 50%;
+      }
+      iframe {
+        overflow: hidden;
+        border: none;
+      }
+  </style>
+  </head>
+  <body>
+    <!-- Add a placeholder for the Twitch embed -->
+    <!-- vocino/lyteforce/klutzy_dragon/zharick/derangedtaco29/teh_ninjaneer/ -->
+    <!-- <div id="twitch-embed"></div> -->
+    <div class="grid">
+      <iframe src="http://player.twitch.tv/?muted=false&channel=vocino"></iframe>
+      <iframe src="http://player.twitch.tv/?muted=false&channel=lyteforce"></iframe>
+      <iframe src="http://player.twitch.tv/?muted=false&channel=teh_ninjaneer"></iframe>
+      <iframe src="http://player.twitch.tv/?muted=false&channel=klutzy_dragon"></iframe>
+      <iframe src="http://player.twitch.tv/?muted=false&channel=zharick"></iframe>
+      <iframe src="http://player.twitch.tv/?muted=false&channel=derangedtaco29"></iframe>
+      <iframe src="http://player.twitch.tv/?muted=false&channel=dasrenegade"></iframe>
+
+    </div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <!-- <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: '20%',
+        height: '20%',
+        muted: false,
+        theme: 'dark',
+        layout: 'video',
+        autoplay: true,
+        channel: 'vocino'
+      });
+      new Twitch.Embed("twitch-embed", {
+        width: '20%',
+        height: '20%',
+        muted: false,
+        theme: 'dark',
+        layout: 'video',
+        autoplay: true,
+        channel: 'teh_ninjaneer'
+      });
+    </script> -->
+  </body>
+</html>
