@@ -1,0 +1,122 @@
+---
+---
+
+<html>
+  <head>
+    <title>Team Strats Watch Party</title>
+    <meta http-equiv="refresh" content="3600">
+    <style type="text/css">
+      html, body {
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+      }
+      #container > div {
+        position: absolute;
+      }
+      #twitch-embed-01 { top: 0; right: 75%; bottom: 50%; left: 0; }
+      #twitch-embed-02 { top: 0; right: 50%; bottom: 50%; left: 25%; }
+      #twitch-embed-03 { top: 0; right: 25%; bottom: 50%; left: 50%; }
+      #twitch-embed-04 { top: 0; right: 0; bottom: 50%; left: 75%; }
+      #twitch-embed-05 { top: 50%; right: 75%; bottom: 0; left: 0; }
+      #twitch-embed-06 { top: 50%; right: 50%; bottom: 0; left: 25%; }
+      #twitch-embed-07 { top: 50%; right: 25%; bottom: 0; left: 50%; }
+      #twitch-embed-08 { top: 50%; right: 0; bottom: 0; left: 75%; }
+  </style>
+  </head>
+  <body>
+    <!-- Add a placeholder for the Twitch embed -->
+    <!-- vocino/lyteforce/klutzy_dragon/zharick/derangedtaco29/teh_ninjaneer/ -->
+    <div id="container">
+      <div id="twitch-embed-01"></div>
+      <div id="twitch-embed-02"></div>
+      <div id="twitch-embed-03"></div>
+      <div id="twitch-embed-04"></div>
+      <div id="twitch-embed-05"></div>
+      <div id="twitch-embed-06"></div>
+      <div id="twitch-embed-07"></div>
+      <div id="twitch-embed-08"></div>
+    </div>
+    <!-- <div class="grid">
+      <iframe src="https://player.twitch.tv/?muted=false&channel=vocino"></iframe>
+      <iframe src="https://player.twitch.tv/?muted=false&channel=lyteforce"></iframe>
+      <iframe src="https://player.twitch.tv/?muted=false&channel=teh_ninjaneer"></iframe>
+      <iframe src="https://player.twitch.tv/?muted=false&channel=klutzy_dragon"></iframe>
+      <iframe src="https://player.twitch.tv/?muted=false&channel=zharick"></iframe>
+      <iframe src="https://player.twitch.tv/?muted=false&channel=derangedtaco29"></iframe>
+      <iframe src="https://player.twitch.tv/?muted=false&channel=dasrenegade"></iframe>
+    </div> -->
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed-01", {
+        width: '100%',
+        height: '100%',
+        muted: false,
+        theme: 'dark',
+        layout: 'video',
+        autoplay: true,
+        channel: 'vocino'
+      });
+      new Twitch.Embed("twitch-embed-02", {
+        width: '100%',
+        height: '100%',
+        muted: false,
+        theme: 'dark',
+        layout: 'video',
+        autoplay: true,
+        channel: 'lyteforce'
+      });
+      new Twitch.Embed("twitch-embed-03", {
+        width: '100%',
+        height: '100%',
+        muted: false,
+        theme: 'dark',
+        layout: 'video',
+        autoplay: true,
+        channel: 'teh_ninjaneer'
+      });
+      new Twitch.Embed("twitch-embed-04", {
+        width: '100%',
+        height: '100%',
+        muted: false,
+        theme: 'dark',
+        layout: 'video',
+        autoplay: true,
+        channel: 'klutzy_dragon'
+      });
+      new Twitch.Embed("twitch-embed-05", {
+        width: '100%',
+        height: '100%',
+        muted: false,
+        theme: 'dark',
+        layout: 'video',
+        autoplay: true,
+        channel: 'zharick'
+      });
+      new Twitch.Embed("twitch-embed-06", {
+        width: '100%',
+        height: '100%',
+        muted: false,
+        theme: 'dark',
+        layout: 'video',
+        autoplay: true,
+        channel: 'derangedtaco29'
+      });
+      new Twitch.Embed("twitch-embed-07", {
+        width: '100%',
+        height: '100%',
+        muted: false,
+        theme: 'dark',
+        layout: 'video',
+        autoplay: true,
+        channel: 'dasrenegade'
+      });
+    </script>
+  </body>
+</html>
