@@ -24,20 +24,26 @@
       #twitch-embed-06 { top: 50%; right: 50%; bottom: 0; left: 25%; }
       #twitch-embed-07 { top: 50%; right: 25%; bottom: 0; left: 50%; }
       #twitch-embed-08 { top: 50%; right: 0; bottom: 0; left: 75%; }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
   </style>
   </head>
   <body>
     <!-- Add a placeholder for the Twitch embed -->
     <!-- vocino/lyteforce/klutzy_dragon/zharick/derangedtaco29/teh_ninjaneer/ -->
     <div id="container">
-      <div id="twitch-embed-01"></div>
-      <div id="twitch-embed-02"></div>
-      <div id="twitch-embed-03"></div>
-      <div id="twitch-embed-04"></div>
-      <div id="twitch-embed-05"></div>
-      <div id="twitch-embed-06"></div>
-      <div id="twitch-embed-07"></div>
-      <div id="twitch-embed-08"></div>
+      <div id="twitch-embed-01"><iframe src="https://player.twitch.tv/?muted=false&channel=stratsco" width="100%" height="100%"></iframe></div>
+      <div id="twitch-embed-02"><iframe src="https://player.twitch.tv/?muted=false&channel=vocino" width="100%" height="100%"></iframe></div>
+      <div id="twitch-embed-03"><iframe src="https://player.twitch.tv/?muted=false&channel=lyteforce" width="100%" height="100%"></iframe></div>
+      <div id="twitch-embed-04"><iframe src="https://player.twitch.tv/?muted=false&channel=teh_ninjaneer" width="100%" height="100%"></iframe></div>
+      <div id="twitch-embed-05"><iframe src="https://player.twitch.tv/?muted=false&channel=klutzy_dragon" width="100%" height="100%"></iframe></div>
+      <div id="twitch-embed-06"><iframe src="https://player.twitch.tv/?muted=false&channel=zharick" width="100%" height="100%"></iframe></div>
+      <div id="twitch-embed-07"><iframe src="https://player.twitch.tv/?muted=false&channel=derangedtaco29" width="100%" height="100%"></iframe></div>
+      <div id="twitch-embed-08"><iframe src="https://player.twitch.tv/?muted=false&channel=dasrenegade" width="100%" height="100%"></iframe></div>
     </div>
     <!-- <div class="grid">
       <iframe src="https://player.twitch.tv/?muted=false&channel=vocino"></iframe>
@@ -53,7 +59,7 @@
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
     <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       new Twitch.Embed("twitch-embed-01", {
         width: '100%',
         height: '100%',
@@ -117,6 +123,6 @@
         autoplay: true,
         channel: 'dasrenegade'
       });
-    </script>
+    </script> -->
   </body>
 </html>
